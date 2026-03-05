@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -31,18 +32,18 @@ export default function RootLayout({
         <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16">
-              <a href="/" className="flex items-center gap-2">
+              <Link href="/" className="flex items-center gap-2">
                 <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                   <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
                 <span className="text-lg font-semibold text-gray-900">电表FAQ</span>
-              </a>
+              </Link>
               <nav className="flex items-center gap-6">
-                <a href="/" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                <Link href="/" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
                   首页
-                </a>
+                </Link>
                 <a href="https://www.95598.cn" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
                   联系客服
                 </a>
